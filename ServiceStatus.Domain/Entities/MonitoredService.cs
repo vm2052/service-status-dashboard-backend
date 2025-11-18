@@ -6,7 +6,8 @@
 	public string Name { get; private set; }
 	public string Url { get; private set; }
 	public DateTime LastChecked { get; private set; }
-	public bool IsHealthy { get; private set; }
+    public DateTime CreatedAt { get; private set; }
+    public bool IsHealthy { get; private set; }
 	public string? LastErrorMessage { get; private set; }
 	public int CheckIntervalSeconds { get; private set; }
 

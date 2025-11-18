@@ -12,6 +12,7 @@ namespace ServiceStatus.Application.DTO
         public string Name { get; set; } = string.Empty;
         public string Url { get; set; } = string.Empty;
         public DateTime LastChecked { get; set; }
+        public DateTime CreatedAt { get; set; }
         public bool IsHealthy { get; set; }
         public string? LastErrorMessage { get; set; }
         public int CheckIntervalSeconds { get; set; }
@@ -21,6 +22,10 @@ namespace ServiceStatus.Application.DTO
         public string Name { get; set; } = string.Empty;
         public string Url { get; set; } = string.Empty;
         public int CheckIntervalSeconds { get; set; } = 60;
+        public DateTime LastChecked { get; set; }
+        public bool IsHealthy { get; set; }
+        public string? LastErrorMessage { get; set; }
+        public DateTime CreatedAt { get; set; }
     }
 
     public class UpdateServiceStatusRequest
