@@ -1,4 +1,5 @@
-﻿using ServiceStatus.Domain.Interfaces;
+﻿using Microsoft.EntityFrameworkCore;
+using ServiceStatus.Domain.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,23 +19,23 @@ namespace ServiceStatus.Infrastructure.Data
 
         public async Task<MonitoredService?> GetByIdAsync(Guid id)
         {
-            return await _context.ServiceStatuses.FindAsync(id);
+            return await _context.MonitoredServices.FindAsync(id);
         }
 
         public async Task<IEnumerable<MonitoredService>> GetAllAsync()
         {
-            return await _context.ServiceStatuses.ToListAsync();
+            return await _context.MonitoredServices.ToListAsync();
         }
 
         public async Task AddAsync(MonitoredService serviceStatus)
         {
-            await _context.ServiceStatuses.AddAsync(serviceStatus);
+            await _context.MonitoredServices.AddAsync(serviceStatus);
             await _context.SaveChangesAsync();
         }
 
         public async Task UpdateAsync(MonitoredService serviceStatus)
         {
-            _context.ServiceStatuses.Update(serviceStatus);
+            _context.MonitoredServices.Update(serviceStatus);
             await _context.SaveChangesAsync();
         }
 
@@ -43,14 +44,14 @@ namespace ServiceStatus.Infrastructure.Data
             var service = await GetByIdAsync(id);
             if (service != null)
             {
-                _context.ServiceStatuses.Remove(service);
+                _context.MonitoredServices.Remove(service);
                 await _context.SaveChangesAsync();
             }
         }
 
         public async Task<bool> ExistsAsync(string name)
         {
-            return await _context.ServiceStatuses.AnyAsync(s => s.Name == name);
+            return await _context.MonitoredServices.AnyAsync(s => s.Name == name);
         }
     }
 }
