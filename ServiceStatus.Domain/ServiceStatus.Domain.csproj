@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="MonitoredService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Entities\MonitoredService.cs" />
+  </ItemGroup>
+
 </Project>

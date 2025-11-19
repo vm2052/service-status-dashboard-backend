@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "H74cNlLuhKg=",
+  "dgSpecHash": "X/h34o3KIF8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
+  "projectFilePath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\malko\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
-    "C:\\Users\\malko\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
+    "C:\\Users\\malkovavi\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.10\\microsoft.aspnetcore.openapi.9.0.10.nupkg.sha512",
+    "C:\\Users\\malkovavi\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []
 }

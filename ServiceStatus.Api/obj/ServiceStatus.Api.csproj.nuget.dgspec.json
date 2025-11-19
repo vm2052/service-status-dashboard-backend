@@ -1,31 +1,42 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj": {}
+    "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj": {
+    "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
+        "projectUniqueName": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
         "projectName": "ServiceStatus.Api",
-        "projectPath": "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
-        "packagesPath": "C:\\Users\\malko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\malko\\workspaces\\service-status-dashboard-backend\\ServiceStatus.Api\\obj\\",
+        "projectPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\ServiceStatus.Api.csproj",
+        "packagesPath": "C:\\Users\\malkovavi\\.nuget\\packages\\",
+        "outputPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Api\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Work\\VS_Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\malko\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\malkovavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\VS Projects\\Nuget Packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\ServiceStatus.Application.csproj": {
+                "projectPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\ServiceStatus.Application.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,7 +49,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -68,7 +79,143 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\ServiceStatus.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\ServiceStatus.Application.csproj",
+        "projectName": "ServiceStatus.Application",
+        "projectPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\ServiceStatus.Application.csproj",
+        "packagesPath": "C:\\Users\\malkovavi\\.nuget\\packages\\",
+        "outputPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Work\\VS_Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\malkovavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\VS Projects\\Nuget Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\ServiceStatus.Domain.csproj": {
+                "projectPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\ServiceStatus.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\ServiceStatus.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\ServiceStatus.Domain.csproj",
+        "projectName": "ServiceStatus.Domain",
+        "projectPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\ServiceStatus.Domain.csproj",
+        "packagesPath": "C:\\Users\\malkovavi\\.nuget\\packages\\",
+        "outputPath": "D:\\VS Projects\\vm2052\\service-status-dashboard-backend\\ServiceStatus.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "D:\\Work\\VS_Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\malkovavi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\VS Projects\\Nuget Packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
