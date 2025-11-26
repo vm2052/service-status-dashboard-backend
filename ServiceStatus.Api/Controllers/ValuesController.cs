@@ -38,6 +38,7 @@ namespace ServiceStatus.Api.Controllers
         {
             try
             {
+                Console.WriteLine("adding service");
                 var service = await _service.AddServiceAsync(request);
                 return CreatedAtAction(nameof(GetService), new { id = service.Id }, service);
             }
