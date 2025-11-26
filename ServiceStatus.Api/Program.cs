@@ -1,5 +1,8 @@
 
+using ServiceStatus.Application;
+using ServiceStatus.Domain.Interfaces;
 using ServiceStatus.Infrastructure;
+using ServiceStatus.Infrastructure.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 //builder.Services.AddOpenApi();
 builder.Services.AddControllers();
+builder.Services.AddHostedService<ServicePingBackgroundService>();
+builder.Services.AddScoped<IServiceLatencyRepository, ServiceLatencyRepository>();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

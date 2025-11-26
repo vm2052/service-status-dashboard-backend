@@ -11,11 +11,12 @@ namespace ServiceStatus.Application.DTO
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
         public string Url { get; set; } = string.Empty;
-        public DateTime LastChecked { get; set; }
+        public DateTime LastChecked { get; set; }  
         public DateTime CreatedAt { get; set; }
         public bool IsHealthy { get; set; }
         public string? LastErrorMessage { get; set; }
         public int CheckIntervalSeconds { get; set; }
+          public List<LatencyDataPointDTO> LatencyData { get; set; } = new List<LatencyDataPointDTO>();
     }
     public class CreateServiceStatusRequest
     {
@@ -33,5 +34,6 @@ namespace ServiceStatus.Application.DTO
         public string? Name { get; set; }
         public string? Url { get; set; }
         public int? CheckIntervalSeconds { get; set; }
+        
     }
 }

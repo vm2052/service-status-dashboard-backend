@@ -35,6 +35,7 @@ namespace ServiceStatus.Infrastructure.Data
 
         public async Task UpdateAsync(MonitoredService serviceStatus)
         {
+            Console.WriteLine(serviceStatus);
             _context.MonitoredServices.Update(serviceStatus);
             await _context.SaveChangesAsync();
         }
